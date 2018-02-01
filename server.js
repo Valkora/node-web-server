@@ -54,6 +54,13 @@ app.get('/bad', (req, res) => {
    });
 });
 
+app.get('/bully', (req, res) => {
+  res.render('bully.hbs', {
+    pageTitle: 'Bully\'s page',
+    message: 'I wanna try to make this page look better than all the others I have here on this server'
+  })
+});
+
 app.listen(port, () => {
   console.log(`Server is up on port ${3000} heeeeeey`);
 });
